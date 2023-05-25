@@ -16,5 +16,7 @@ public class CustomLinkedListDemo {
         thirdNode.next = fourthNode;
 
         linkedList.displayContents();
+        linkedList.deleteBackHalf();
+        linkedList.displayContents();
     }
 }
