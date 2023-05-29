@@ -1,2 +1,1 @@
-# Java-Array-Operations
-# Java-LinkedList-Operations
+Data Structure Impl in Java
