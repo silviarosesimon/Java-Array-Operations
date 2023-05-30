@@ -12,7 +12,7 @@ public class BinaryTree {
         if(root != null) {
             postOrderTraversal(root.left);
             postOrderTraversal(root.right);
-            System.out.println(root.data + " ");
+            System.out.print(root.data + " ");
         }
     }
 
@@ -23,7 +23,7 @@ public class BinaryTree {
     private void inOrderTraversal(Node root) {
         if(root != null) {
             inOrderTraversal(root.left);
-            System.out.println(root.data + " ");
+            System.out.print(root.data + " ");
             inOrderTraversal(root.right);
         }
     }
@@ -34,7 +34,7 @@ public class BinaryTree {
 
     private void preOrderTraversal(Node root) {
         if(root != null) {
-            System.out.println(root.data + " ");
+            System.out.print(root.data + " ");
             preOrderTraversal(root.left);
             preOrderTraversal(root.right);
         }

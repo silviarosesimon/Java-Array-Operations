@@ -23,9 +23,13 @@ public class Main {
         nodeFour.left = nodeSeven;
         BinaryTree binaryTree = new BinaryTree();
         binaryTree.root = rootNode;
+        System.out.println();
         binaryTree.preOrderTraversal();
+        System.out.println();
         binaryTree.inOrderTraversal();
+        System.out.println();
         binaryTree.postOrderTraversal();
+        System.out.println();
 
         Node root = new Node();
         root.data = 2;
