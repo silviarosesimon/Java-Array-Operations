@@ -1,4 +1,4 @@
-package linkedlist;
+package com.ds.linkedlist;
 
 public class CustomLinkedListDemo {
 
@@ -16,7 +16,10 @@ public class CustomLinkedListDemo {
         thirdNode.next = fourthNode;
 
         linkedList.displayContents();
-        linkedList.deleteBackHalf();
+        //linkedList.deleteBackHalf();
+        //linkedList.displayContents();
+        linkedList.deleteSpecifiedNodeFromEnd(2);
         linkedList.displayContents();
+
     }
 }

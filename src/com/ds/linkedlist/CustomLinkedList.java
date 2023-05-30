@@ -1,4 +1,4 @@
-package linkedlist;
+package com.ds.linkedlist;
 
 
 public class CustomLinkedList {
@@ -28,5 +28,29 @@ public class CustomLinkedList {
         }
 
         prev.next = null;
+    }
+
+    public void deleteSpecifiedNodeFromEnd(int k) {
+        if(head == null || k == 0) {
+            return;
+        }
+        Node first = head;
+        Node second = head;
+        for(int i=0; i<k; i++) {
+            second = second.next;
+            if(second.next == null) {
+                if(i==k-1) {
+                    head = head.next;
+                }
+                return;
+            }
+        }
+        while(second.next != null) {
+            first = first.next;
+            second = second.next;
+        }
+
+        first.next = first.next.next;
+
     }
 }

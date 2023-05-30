@@ -1,4 +1,4 @@
-package linkedlist;
+package com.ds.linkedlist;
 
 import java.util.LinkedList;
 
@@ -19,6 +19,7 @@ public class BuiltinLinkedListBasicOperations {
             System.out.println(fruit);
         }
 
+        fruits.remove(2);
         fruits.forEach(fruit -> System.out.println(fruit));
     }
 

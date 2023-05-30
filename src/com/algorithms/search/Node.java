@@ -1,4 +1,4 @@
-package algorithms;
+package com.algorithms.search;
 
 import java.util.*;
 

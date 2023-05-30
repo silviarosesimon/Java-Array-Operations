@@ -1,4 +1,4 @@
-package array;
+package com.ds.array;
 
 public class IncrementArray {
 
