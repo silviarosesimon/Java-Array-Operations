@@ -1,8 +1,10 @@
 package com.ds.linkedlist;
 
 
+import java.util.HashSet;
+
 public class CustomLinkedList {
-    Node head;
+    public Node head;
 
     public void displayContents() {
         Node current = head;
@@ -53,4 +55,20 @@ public class CustomLinkedList {
         first.next = first.next.next;
 
     }
+
+    public boolean hasCycle() {
+        Node current = head;
+        HashSet<Node> hashSet = new HashSet<>();
+        while(current != null) {
+            if(hashSet.contains(current)) {
+                return true;
+            }
+            else {
+                hashSet.add(current);
+            }
+            current = current.next;
+        }
+        return false;
+    }
+
 }
