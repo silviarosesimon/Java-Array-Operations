@@ -1,5 +1,8 @@
 package com.algorithms.sort;
 
+// based on the Divide and Conquer algorithm that picks an element as a pivot
+// and partitions the given array around the picked pivot by placing the pivot
+// in its correct position in the sorted array.
 public class QuickSort {
 
     //4,5,7,2,9,3

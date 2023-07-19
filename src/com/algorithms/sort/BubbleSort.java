@@ -2,6 +2,9 @@ package com.algorithms.sort;
 
 import java.util.stream.IntStream;
 
+//works by repeatedly swapping the adjacent elements if they are in the wrong order.
+// O(N^2)
+// O(1)
 public class BubbleSort {
     //4,5,7,2,9,3
     //4,5,2,7,9,3

@@ -1,5 +1,7 @@
 package com.algorithms.sort;
 
+//works by repeatedly selecting the smallest (or largest) element from the unsorted portion
+// of the list and moving it to the sorted portion of the list.
 public class SelectionSort {
 
     //4,5,7,2,9,3
