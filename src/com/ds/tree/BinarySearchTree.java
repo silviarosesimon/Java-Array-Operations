@@ -4,6 +4,21 @@ public class BinarySearchTree {
 
     Node root;
 
+    public static void main(String[] args) {
+
+
+        Node root = new Node(2);
+        BinarySearchTree binarySearchTree = new BinarySearchTree();
+        binarySearchTree.root = root;
+        binarySearchTree.insert(3);
+        binarySearchTree.insert(1);
+        binarySearchTree.insert(4);
+        System.out.println(binarySearchTree.search(4));
+        System.out.println(binarySearchTree.search(7));
+        //binarySearchTree.display();
+
+    }
+
     public boolean search(int value) {
         return search(this.root,value);
     }
@@ -27,8 +42,7 @@ public class BinarySearchTree {
 
     private Node insert(Node root, int value) {
         if(root == null) {
-            root = new Node();
-            root.data = value;
+            root = new Node(value);
         }
         else if(value < root.data){
             root.left = insert(root.left, value);
