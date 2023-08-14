@@ -1,5 +1,6 @@
 package com.algorithms.search.bfs;
 
+@Deprecated
 public class Main {
 
     public static void main(String[] args) {

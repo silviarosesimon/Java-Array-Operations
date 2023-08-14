@@ -2,6 +2,7 @@ package com.algorithms.search.bfs;
 
 import java.util.*;
 
+@Deprecated
 public class Node<T> {
 
     private T value;

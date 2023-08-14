@@ -3,6 +3,7 @@ package com.algorithms.search.dfs;
 import java.util.*;
 
 
+@Deprecated
 public class DepthFirstSearchGraph {
 
     private Map<Integer, List<Integer>> adjVertices;

@@ -2,45 +2,10 @@ package com.algorithms.search.dfs;
 
 import java.util.List;
 
+@Deprecated
 public class Main {
 
     public static void main(String[] args) {
-        //            5
-        //       2           4
-        //  9       10    7
-        System.out.println("Tree");
-        Node rootNode = new Node(5);
-        Node nodeTwo = new Node(2);
-        Node nodeFour = new Node(4);
-        Node nodeNine = new Node(9);
-        Node nodeTen = new Node(10);
-        Node nodeSeven = new Node(7);
-        rootNode.left = nodeTwo;
-        rootNode.right = nodeFour;
-        nodeTwo.left = nodeNine;
-        nodeTwo.right = nodeTen;
-        nodeFour.left = nodeSeven;
-        BinaryTree binaryTree = new BinaryTree();
-        binaryTree.root = rootNode;
-        System.out.println("Preorder");
-        DepthFirstSearchTree.traversePreOrder(binaryTree.root);
-        System.out.println();
-        System.out.println("PreOrderWithoutRecursion");
-        DepthFirstSearchTree.traversePreOrderWithoutRecursion(binaryTree.root);
-        System.out.println();
-        System.out.println("InOrder");
-        DepthFirstSearchTree.traverseInOrder(binaryTree.root);
-        System.out.println();
-        System.out.println("InOrderWithoutRecursion");
-        DepthFirstSearchTree.traverseInOrderWithoutRecursion(binaryTree.root);
-        System.out.println();
-        System.out.println("PostOrder");
-        DepthFirstSearchTree.traversePostOrder(binaryTree.root);
-        System.out.println();
-        System.out.println("PostOrderWithoutRecursion");
-        DepthFirstSearchTree.traversePostOrderWithoutRecursion(binaryTree.root);
-        System.out.println();
-
         DepthFirstSearchGraph graph = new DepthFirstSearchGraph();
         graph.addVertex(0);
         graph.addVertex(1);

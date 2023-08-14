@@ -2,6 +2,7 @@ package com.algorithms.search.bfs;
 
 import java.util.*;
 
+@Deprecated
 public class BreadthFirstSearch {
 
     public static <T> Optional<Tree<T>> searchTree(T value, Tree<T> root) {
